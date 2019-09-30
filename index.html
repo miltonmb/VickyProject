@@ -9,6 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href='https://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="turn.js"></script>
     <title>Vicky Project</title>
     <script>
         $('audio').on('canplay', function () {
@@ -17,9 +20,99 @@
     </script>
 
     <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Stalemate');
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        body {
+            background: linear-gradient(rgba(255, 255, 255, 0.9),
+                    rgba(255, 255, 255, 0.9)), url(https://s-media-cache-ak0.pinimg.com/originals/30/b3/a9/30b3a9b27032a6b9c1d7a69d2400fb9e.jpg);
+            font-family: 'Stalemate', cursive;
+        }
+
+
+        .container {
+            overflow: hidden;
+            // margin-top: 3%;
+        }
+
+        .book-wrapper {
+            position: relative;
+            margin: 2% auto;
+            width: 670px;
+        }
+
+        .book-wrapper img {
+            filter: drop-shadow(15px 5px 5px #494338);
+        }
+
+        .pages-container {
+            position: absolute;
+            top: 4%;
+            left: 3%;
+            right: 0;
+            bottom: 0;
+            width: 91.5%;
+            height: 91%;
+        }
+
+        .pages {}
+
+        .pages [class^="page-num-"] {
+            background-image: url("https://img00.deviantart.net/cbb9/i/2005/258/c/4/paper_texture_v5_by_bashcorpo.jpg");
+            background-size: auto 100%;
+            position: relative;
+        }
+
+
+        .pages-content {
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: table;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 10%;
+        }
+
+        .content-inner {
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+
+        .book-wrapper {
+            user-select: none;
+        }
+
+
+        .page-num-1 .pages-background {
+            background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(https://openclipart.org/image/2400px/svg_to_png/242093/Vintage-Floral-Texture-Background.png);
+            background-size: cover;
+            opacity: 0.2;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
         * {
             box-sizing: border-box;
         }
+
 
         body {
             font-family: 'Nothing You Could Do';
@@ -362,6 +455,151 @@
             </a>
         </li>
     </ul>
+    <div class="container">
+        <div class="book-wrapper">
+            <div class="book-cover">
+                <img src="https://github.com/slyka85/assets/blob/master/bookcover2.png?raw=true" alt="">
+            </div>
+            <div class="pages-container">
+                <div class="pages">
+                    <div class="page-num-1">
+                        <div class="pages-content">
+                            <div class="pages-background"></div>
+                            <div class="content-inner">
+                                <h1>Como te conocí</h1>
+                                <div class="text">
+                                    <p>
+                                        Milton Joel Martínez
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-num-2">
+                        <div class="pages-content">
+                            <div class="content-inner">
+                                <h1>Capitulo 1: El Gran Plan</h1>
+                                <div class="text">
+                                    <p>Recuerdo aquel día... Esa mañana me encontraba en la universidad
+                                        como de costumbre, todas las mañanas me las pasaba en el Rec Zen
+                                        hablando con mis amigos, pero esa mañana fue distinta, todo transcurría
+                                        igual, y fue cuando un amigo me enseño una foto de ella, y le conté
+                                        qu ella me gustaba..
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="page-num-3">
+                        <div class="pages-content">
+                            <div class="content-inner">
+                                <div class="text">
+                                    <p>
+                                        Y fue justo en ese momento, dónde surgió la idea del gran plan, al estilo
+                                        Barney Stinson, y lo llamé "The Victoria".
+                                        El plan consistía en acercarme a ella, hacerme notar,
+                                        pero todo era bien difícil, porqué siempre he sido un chico muy tímido,
+                                        pero tenía que comenzar por algo, así que lo primero que hice fue agregarla a
+                                        Facebook.
+                                        Al tenerla agregada en Facebook, me di cuenta que compartiamos gustos similares,
+                                        en especial
+                                        por una serie, ""How I Met your Mother", y decidí que por ahi iba a
+                                        entrar.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-num-4">
+                        <div class="pages-content">
+                            <div class="content-inner">
+                                <div class="text">
+                                    <p>Al tener en cuenta el gustó de ella por esa serie, yo compartía publicaciones
+                                        siempre relacionadas con algún tipo de indirecta.
+                                        Luego, tuve la idea de grabar una canción que yo sabía que le iba a gustar,
+                                        entonces llamé a mi primo Rodolfo, y le dije: "Man, te ocupó ahorita mismo
+                                        aquí",
+                                        al llegar el, le conté mi plan y acepto ayudarme.
+                                        La canción que grabé fue La vie En Rose, pero como la tocan en la serie, subí el
+                                        video a
+                                        facebook, y como esperaba, ella reaccionó.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-num-5">
+                        <div class="pages-content">
+                            <div class="content-inner">
+                                <div class="text">
+                                    <p>
+                                        Cuando ella reaccionó a mi video, supe en ese momento que tenía que poner en
+                                        marcha
+                                        el plan de hablarle, solo que no sabia como hacerlo..
+                                        La primera idea, era realizar una encuesta, y pedirle que me la llenara.. Pero
+                                        esto no
+                                        me convenció al final.
+                                        Cada cierto tiempo revisaba Ask.Fm, que es una red social donde la gente se
+                                        puede hacer preguntas,
+                                        mientras revisaba, me pregunté si ella tenía Ask, entonces me puse a buscar,
+                                        hasta que la encontré.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-num-6">
+                        <div class="pages-content">
+                            <div class="content-inner">
+                                <div class="text">
+                                    <p>
+                                        Me fije que las ultimas respuestas eran de hace mucho tiempo, asi que me avente
+                                        a decirle algo anonimamente sin esperar respuesta alguna.
+                                        Pero para mi sorpresa, no habian pasado ni 10 minutos, cuando ya ella me habia
+                                        respondido
+                                        lo que le habia puesto, entonces le segui escribiendo, pero siempre de forma
+                                        anonima.
+                                        Le decia cosas como que ella me parecía hermosa, y ella necia que queria saber
+                                        quien era.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-num-7">
+                        <div class="pages-content">
+                            <div class="content-inner">
+                                <div class="text">
+                                    <p>
+                                        Pero a mi me daba mucha pena, y no quería decirle, asi que le propuse algo..
+                                        Le dije, "Escribime, si soy yo, te voy a decir inmediatamente, y si no, pues
+                                        sigue intentando",
+                                        dos minutos habian pasado, cuando en mi bandeja de preguntas ya tenia algo de
+                                        ella, y como le prometi..
+                                        Le escribi por Messenger, y así inició la 2da fase del plan, hacer que
+                                        se enamorará de mi.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-num-8">
+                        <div class="pages-content">
+                            <div class="content-inner">
+                                <div class="text">
+                                    <h1>Capitulo 2: El inicio</h1>
+                                    <p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 </body>
 
